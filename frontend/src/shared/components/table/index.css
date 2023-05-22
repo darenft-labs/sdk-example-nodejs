@@ -1,0 +1,130 @@
+@tailwind components;
+
+@layer components {
+  .row-default > td {
+    @apply bg-dark-blue-grey border border-faded-blue border-opacity-25 !important;
+  }
+
+  .row-custom > td {
+    @apply bg-dark-slate-blue border-b-[1px] border-faded-blue border-opacity-25 !important;
+  }
+
+  .row-head {
+    @apply bg-grey-200 outline-0 border-0 !important;
+  }
+
+  .row-head-gray {
+    @apply bg-faded-light-blue-500 outline-0 border-0 !important;
+  }
+
+  .ant-table-thead > tr > th {
+    border: none !important;
+  }
+
+  .row-white > td {
+    @apply bg-white border-b-[1px] border-b-grey-400 h-20 !important;
+  }
+
+  .row-white > td {
+    @apply mx-[30px] !important;
+    @apply first:pl-1 !important;
+    @apply last:pr-0 !important;
+  }
+
+  .ant-table-cell-scrollbar:not([rowspan]) {
+    @apply shadow-none !important;
+  }
+
+  .row-dark:last-child > td {
+    @apply border-b-[0px] !important;
+  }
+
+  .row-dark > td {
+    @apply bg-[#1c3353] h-[66px] max-h-[66px] !important;
+  }
+
+  .row-dark > td {
+    @apply mx-[30px] !important;
+    @apply last:pr-0 !important;
+  }
+
+  .row-dark:last-child > td {
+    @apply border-b-[0px] !important;
+  }
+
+  .tournament-table .ant-table-tbody > tr > td {
+    border: 1px solid rgba(95, 143, 191, 0.25) !important;
+    border-top: none !important;
+  }
+
+  .tournament-table .ant-table-tbody::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+
+  .tournament-table .ant-table-tbody::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .tournament-table .ant-table-tbody::-webkit-scrollbar-thumb {
+    background-color: rgba(#333, 0.2);
+    border: 3px solid transparent;
+    border-radius: 4px;
+  }
+
+  .tournament-table .ant-table-tbody > tr:nth-child(2) > td {
+    background: #193b64 !important;
+  }
+
+  .prizes-table .ant-table-tbody > tr:nth-child(2) > td:nth-child(2) > div {
+    color: #fdcf4c !important;
+  }
+
+  .tournament-table .ant-table-tbody > tr:nth-child(3) > td {
+    background: #193b64 !important;
+  }
+
+  .prizes-table .ant-table-tbody > tr:nth-child(3) > td:nth-child(2) > div {
+    color: #c7c7c7 !important;
+  }
+
+  .tournament-table .ant-table-tbody > tr:nth-child(4) > td {
+    background: #193b64 !important;
+  }
+
+  .prizes-table .ant-table-tbody > tr:nth-child(4) > td:nth-child(2) > div {
+    color: #ff9635 !important;
+  }
+
+  .table-without-scrollbar .ant-table-body {
+    overflow: unset !important;
+  }
+
+  .table-with-scrollbar .ant-table-body {
+    overflow-y: scroll !important;
+  }
+
+  .tournament-table .ant-table-thead {
+    border: 1px solid transparent !important;
+    height: 48px !important;
+  }
+  .tournament-table .ant-table-thead > tr > th {
+    border: none !important;
+  }
+
+  .container-collection-forsale .ant-table-thead > tr > th {
+    padding: 16px 0px !important;
+  }
+
+  .container-collection-forsale .ant-table-tbody > tr > td {
+    padding: 0px !important;
+  }
+
+  .container-collection-forsale .ant-table-tbody > tr > td:first-child {
+    padding-left: 5px !important;
+  }
+
+  .container-bidding-wallet .ant-table-thead > tr > th {
+    background-color: theme("colors.grey.100") !important;
+  }
+}

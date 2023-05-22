@@ -1,0 +1,49 @@
+@tailwind components;
+
+@layer components {
+  .bell-container {
+    @apply relative flex cursor-pointer;
+  }
+  .bell-icon {
+    @apply w-10 h-10 p-[10px] bg-light-gray border border-gray-100 rounded box-border;
+  }
+  .bell-bagde-icon {
+    @apply absolute right-0 top-1;
+  }
+  .noti-info-container {
+    @apply absolute z-20 top-10 left-[-260px] w-full invisible group-focus-within:visible;
+  }
+  .noti-info-content {
+    @apply w-full bg-white border border-grey-900 min-w-[300px] drop-shadow-[0_8px_20px_rgba(0,0,0,0.05)] rounded p-4 pr-0 mt-2;
+  }
+  .label {
+    @apply uppercase text-base font-semibold;
+  }
+  .inactive-button {
+    @apply min-w-[56px] px-[14px] 3xl:px-[25px] rounded-md bg-pale-grey text-black h-6 3xl:h-10 flex items-center justify-center cursor-pointer text-xxs 3xl:text-sm transition hover:duration-300;
+  }
+  .active-button {
+    @apply !bg-light-blue !text-white;
+  }
+  .mark-all-text {
+    @apply flex-1 text-right underline font-semibold !text-xxs 3xl:text-sm;
+  }
+  .tab-noti-container {
+    @apply flex gap-2 mt-4 items-center mr-4;
+  }
+  .tab-noti-pane {
+    @apply space-y-1 max-h-[460px] overflow-y-scroll;
+  }
+  .noti-item-contaner {
+    @apply bg-pale-grey rounded bg-opacity-80 p-[17px] pb-1 flex gap-[10px] mr-2 cursor-pointer;
+  }
+  .mess-active {
+    @apply w-[6px] h-[6px] rounded-full flex-none bg-fresh-green mt-1;
+  }
+  .mess-time {
+    @apply text-nickel text-xxs 3xl:text-sm italic;
+  }
+  .mess-detail {
+    @apply text-xxs 3xl:text-sm text-dark-strong-blue;
+  }
+}

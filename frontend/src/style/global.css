@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .custom-input {
+    @apply mt-1 w-96 py-2 px-3 rounded-lg border-0 outline-0 bg-marine-blue shadow-none text-white placeholder:text-faded-blue placeholder:text-sm !important;
+  }
+  .input-default {
+    @apply bg-dark-blue shadow-none text-blue-200 text-opacity-80 font-thin;
+    @apply placeholder:text-faded-blue placeholder:text-sm w-full p-2 rounded-md outline-0;
+    @apply border border-dark-blue hover:border-blue-200 hover:border-opacity-70;
+  }
+  .vertical-line {
+    @apply h-full w-px bg-faded-blue mx-10 opacity-25;
+  }
+  .horizontal-line {
+    @apply w-full h-px bg-faded-blue opacity-25;
+  }
+  .tag-price {
+    @apply px-3 py-px text-white text-tiny rounded-sm font-light;
+  }
+  .row-form-game {
+    @apply flex flex-col;
+  }
+  .label-form-game {
+    @apply text-white font-semibold text-xl pb-3;
+  }
+
+  .error-message {
+    @apply text-red-500 text-left mt-1 font-light text-sm;
+  }
+
+  .line-clamp {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  .overlay-banner {
+    background: linear-gradient(180deg, rgba(7, 25, 46, 0) 0%, rgba(7, 25, 46, 0.5) 100%);
+  }
+
+  .background-body {
+    background: linear-gradient(180deg, #121126 0%, #213045 48.78%, #121126 98.59%);
+  }
+
+  .blue-button {
+    background: linear-gradient(180deg, #0069e8 0%, #0051b4 100%) !important;
+  }
+
+  .line-clamp-15 {
+    -webkit-line-clamp: 15;
+  }
+  .line-clamp-3 {
+    -webkit-line-clamp: 3;
+  }
+  .line-clamp-4 {
+    -webkit-line-clamp: 4;
+  }
+  .line-clamp-2 {
+    -webkit-line-clamp: 2;
+  }
+
+  .container-dashboard {
+    /* @apply bg-dark-blue; */
+    height: 100%;
+    min-width: 1200px;
+  }
+
+  .triangle {
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply rounded-lg;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  html,
+  *:not(.ant-table-body) {
+    &::-webkit-scrollbar-thumb {
+      @apply rounded-lg bg-grey-150;
+    }
+  }
+
+  html,
+  .ant-table-body {
+    &::-webkit-scrollbar-thumb {
+      @apply rounded-lg bg-gray-300 !h-20;
+    }
+  }
+
+  html,
+  .ant-table-body {
+    &::-webkit-scrollbar-track {
+      @apply rounded-lg;
+    }
+  }
+}
+
+@layer base {
+  html,
+  * {
+    scrollbar-color: theme("colors.blue.500") theme("colors.grey.150");
+    scrollbar-width: thin;
+  }
+
+  body {
+    @apply font-poppins;
+    height: 100%;
+  }
+}
+
+/* Input webkit fix */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

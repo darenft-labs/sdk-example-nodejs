@@ -1,0 +1,55 @@
+.ant-pagination-item-ellipsis {
+  color: theme("colors.grey-blue") !important;
+}
+
+.ant-pagination-item-container {
+  background-color: theme("colors.dark-grey-blue") !important;
+  border-radius: 8px !important;
+}
+
+.ant-pagination-item {
+  background-color: theme("colors.dark-grey-blue") !important;
+  border-color: theme("colors.dark-grey-blue") !important;
+  border-radius: 8px !important;
+}
+
+.ant-pagination-next .ant-pagination-item-link {
+  background-color: theme("colors.dark-grey-blue") !important;
+  border-color: theme("colors.dark-grey-blue") !important;
+  color: theme("colors.grey-blue") !important;
+  border-radius: 8px !important;
+}
+
+.ant-pagination-prev .ant-pagination-item-link {
+  background-color: theme("colors.dark-grey-blue") !important;
+  border-color: theme("colors.dark-grey-blue") !important;
+  color: theme("colors.grey-blue") !important;
+  border-radius: 8px !important;
+}
+
+.ant-pagination-item a {
+  color: theme("colors.grey-blue") !important;
+}
+
+.ant-pagination-item-active {
+  background-color: theme("colors.light-blue") !important;
+  border-color: theme("colors.light-blue") !important;
+}
+
+.ant-pagination-item-active a {
+  color: white !important;
+}
+
+.ant-pagination-options-quick-jumper {
+  color: theme("colors.grey-blue") !important;
+}
+
+.ant-pagination-options-quick-jumper input {
+  color: theme("colors.grey-blue") !important;
+  background-color: theme("colors.dark-grey-blue") !important;
+  border-color: theme("colors.dark-grey-blue") !important;
+}
+
+.anticon {
+  vertical-align: 0.125em !important;
+}

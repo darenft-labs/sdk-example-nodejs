@@ -1,0 +1,45 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bytes32[]",
+                "name": "dataKeys",
+                "type": "bytes32[]"
+            },
+            {
+                "internalType": "bytes[]",
+                "name": "dataValues",
+                "type": "bytes[]"
+            },
+            {
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "source",
+                "type": "address"
+            },
+            {
+                "internalType": "bytes",
+                "name": "sourceSignature",
+                "type": "bytes"
+            },
+            {
+                "internalType": "bytes",
+                "name": "verifierSignature",
+                "type": "bytes"
+            }
+        ],
+        "name": "setData",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    }
+]

@@ -1,0 +1,21 @@
+{
+  "Cancel": "Cancel",
+  "Choose wallet": "Choose wallet",
+  "Confirm": "Confirm",
+  "Disclaimer": "Disclaimer",
+  "I read and accept the": "I read and accept the",
+  "Policy privacy": "Policy privacy",
+  "Privacy Policy": "Privacy Policy",
+  "Terms of Service": "Terms of Service",
+  "Terms of Use": "Terms of Use",
+  "and": "and",
+  "approve": {
+    "success": "Approve Success"
+  },
+  "notification": {
+    "all": "All",
+    "label": "Notification",
+    "mark-all": "Mark all",
+    "unread": "Unread"
+  }
+}
