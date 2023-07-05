@@ -1,12 +1,12 @@
 import EmptyData from "./empty-data"
 import Item from "./item"
-import ButtonImport from "../button-import"
 import { useEthers } from "@usedapp/core"
 import { useEffect } from "react"
 import { groupBy } from "lodash"
 import { useSelector } from "react-redux"
 import { RootState } from "@/redux/store"
 import { useNftData } from "@/hooks/use-nfts"
+import ImportButton from "../import-button"
 
 const ListNFt = () => {
   const { account } = useEthers()
@@ -26,7 +26,7 @@ const ListNFt = () => {
       {!!nftData && nftData?.length !== 0 && account ? (
         <div className="mt-10 w-full">
           <div className="flex justify-center lg:justify-end mb-8">
-            <ButtonImport />
+            <ImportButton />
           </div>
           <div className="grid grid-cols-1 gap-5">
             {result?.map((item, index) => {

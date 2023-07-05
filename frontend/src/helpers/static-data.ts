@@ -30,32 +30,14 @@ export const FORMAT_DATE_UPDATE = "YYYY-MM-DD"
 
 export const DEFAULT_PAGE_SIZE = 10
 
-export enum ProviderType {
-  GAME = 1,
-}
+export const UPDATE = "UPDATE"
+export const UPDATE_IN_VAULT = "UPDATE_IN_VAULT"
+export const WITHDRAW = "WITHDRAW"
 
-export enum TournamentStatus {
-  ALL,
-  REGISTRATION = 4,
-  COMPETING = 5,
-  ENDING = 6,
-}
-
-export enum ResultRule {
-  IS_THE_SMALLEST,
-  IS_THE_GREATEST,
-}
-
-export const ResultRuleSort = {
-  [ResultRule.IS_THE_GREATEST]: "DESC",
-  [ResultRule.IS_THE_SMALLEST]: "ASC",
-}
-
-export const TournamentStatuslabel = {
-  [TournamentStatus.REGISTRATION]: "Registration",
-  [TournamentStatus.COMPETING]: "Competing",
-  [TournamentStatus.ENDING]: "Ending",
-}
+export const BUTTON_PLAY_GAME = "BUTTON_PLAY_GAME"
+export const BUTTON_QUIT_GAME = "BUTTON_QUIT_GAME"
+export const BUTTON_UPDATE = "BUTTON_UPDATE"
+export const BUTTON_UPDATE_NOT_IN_VAULT = "BUTTON_UPDATE_NOT_IN_VAULT"
 
 export enum ConnectWalletType {
   META_MASK = "metamask",
@@ -105,6 +87,11 @@ export enum NFTContractType {
   Original = 0,
   Derivative = 1,
   All = 2,
+}
+
+export enum NFTStatus {
+  Free = 0,
+  Locked = 1,
 }
 
 export enum FeeMethod {

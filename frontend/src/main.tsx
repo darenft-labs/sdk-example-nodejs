@@ -16,7 +16,7 @@ const LoadingOverlay = React.lazy(() => import("@/shared/components/loading-over
 const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+  <React.Fragment>
     <BlockchainProvider>
       <Provider store={store}>
         <QueryClientProvider client={queryClient}>
@@ -29,5 +29,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         </QueryClientProvider>
       </Provider>
     </BlockchainProvider>
-  </React.StrictMode>
+  </React.Fragment>
 )

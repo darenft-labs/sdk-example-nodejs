@@ -26,9 +26,14 @@ export class ProviderController {
             const provider = {
               ...schemas.provider,
               schema: {},
-            };
+              vault: null,
+            } as any;
             delete schemas.provider;
             provider.schema = schemas;
+            provider.vault =
+              (await this.nft2Service.getProviderVault(
+                supportedAddresses[i],
+              )) || "";
 
             resolve(provider);
           } catch (error) {

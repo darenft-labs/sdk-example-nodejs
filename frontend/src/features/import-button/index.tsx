@@ -1,11 +1,11 @@
 import { BaseModal, Button } from "@/shared/components"
 import React, { useState } from "react"
-import ModalImport from "./modal-import"
 import { useDispatch } from "react-redux"
 import { useEthers } from "@usedapp/core"
 import { setModalOpened } from "@/redux/modal-connect-wallet"
+import ModalImport from "./import-modal"
 
-const ButtonImport = () => {
+const ImportButton = () => {
   const [isOpen, setIsOpen] = useState(false)
   const dispatch = useDispatch()
   const { account } = useEthers()
@@ -46,4 +46,4 @@ const ButtonImport = () => {
   )
 }
 
-export default ButtonImport
+export default ImportButton

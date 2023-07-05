@@ -18,7 +18,7 @@ const Item = ({ data }: Props) => {
             <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col items-center justify-center">
               <CustomIcon iconName="empty-image" />
               <div className="uppercase mt-3 tracking-[0.02rem] text-tiny font-medium text-white text-center">
-                No image available
+                No images available
               </div>
             </div>
           </div>

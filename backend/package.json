@@ -21,7 +21,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@darenft/nft2-client": "1.2.11",
+    "@darenft/nft2-client": "1.2.17",
     "@nestjs/axios": "0.1.1",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",

@@ -1,0 +1,4 @@
+.ant-tooltip-inner {
+  color: theme("colors.dark-strong-blue") !important;
+  font-size: theme("fontSize.tiny") !important;
+}

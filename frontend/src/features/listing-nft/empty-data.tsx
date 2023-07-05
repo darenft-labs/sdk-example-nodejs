@@ -1,4 +1,4 @@
-import ButtonImport from "../button-import"
+import ImportButton from "../import-button"
 
 const EmptyData = () => {
   return (
@@ -8,7 +8,7 @@ const EmptyData = () => {
       </div>
       <div className="flex flex-col items-center">
         <div className="text-base text-gray-500 text-center italic mb-3">Cannot find your NFT?</div>
-        <ButtonImport />
+        <ImportButton />
       </div>
     </div>
   )

@@ -45,6 +45,8 @@ export type NftType = {
   nftContractAddress: string
   nftContractId: number
   nftContract: NftContract
+  temporaryAddress: string
+  tokenUri: string
 }
 
 export type TransactionType = {
@@ -105,6 +107,7 @@ export type ProviderResponse = {
     createdAt?: string
     updatedAt?: string
   }
+  vault: string
 }
 
 export type UpdateMetadataResponse = {

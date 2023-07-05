@@ -18,7 +18,7 @@ export const useNftData = () => {
 
   const setData = (data) => {
     const list = localData?.nftList
-    list.push(data)
+    list.unshift(data)
     localStorage.setItem(`${account}`, JSON.stringify({ walletAddress: account, nftList: list }))
     dispatch(setNftList(data))
   }

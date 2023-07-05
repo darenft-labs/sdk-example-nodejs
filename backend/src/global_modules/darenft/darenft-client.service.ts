@@ -34,4 +34,10 @@ export class NFT2Service {
       }
     });
   }
+
+  async getProviderVault(address: string) {
+    const result = await this.client.provider.getProviderVaults(address);
+
+    return result.items?.[0]?.contractAddress;
+  }
 }
